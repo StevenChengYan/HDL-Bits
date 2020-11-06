@@ -14,9 +14,6 @@ module top_module (
     
 endmodule
 
-//module add16( input a[15:0], input b[15:0], input cin, output sum output cout);
-//endmodule
-
 module add1 ( input a, input b, input cin,   output sum, output cout );
     always@(a or b or cin)
     begin
