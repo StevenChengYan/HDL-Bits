@@ -7,11 +7,11 @@ module top_module (
     always@(posedge clk) begin
         if(reset) 
             q <= 0;
-        else if(q > 8)
-            q <= 0;
-        else begin
-            if(slowena)
+        else if(slowena) begin
+            if(q >8)
+                q <= 0;
+            else
             	q <= q+1; 
-        end           
+        end
     end
 endmodule
