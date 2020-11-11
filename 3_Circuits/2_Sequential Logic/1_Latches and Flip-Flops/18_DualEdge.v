@@ -24,6 +24,8 @@ module top_module (
     always @ (negedge clk) begin
     	q2 <= q1^d; 
     end
+    //Rising edge，p=d^n, q=d^n^n=d;
+    //Falling edge，n=d^p, q=p^d^p=d;
     
     assign q = q1^q2;
     */
