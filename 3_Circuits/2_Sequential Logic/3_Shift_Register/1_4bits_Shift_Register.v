@@ -12,7 +12,7 @@ module top_module(
         else if(load)
             q <= data;
         else if(ena) begin
-            q <= (q >> 1);
+            q[3:0] <= {1'b0, q[3:1]};
         end
     end
 
