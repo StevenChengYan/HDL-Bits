@@ -12,8 +12,6 @@ module top_module (
         else begin
             if(slowena)
             	q <= q+1; 
-        end
-           
+        end           
     end
-
 endmodule
