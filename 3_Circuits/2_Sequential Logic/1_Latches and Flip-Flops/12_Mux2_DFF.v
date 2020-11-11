@@ -3,8 +3,9 @@ module top_module (
     input w, R, E, L,
     output Q
 );
-	wire w1, w_din;
-    always@(*) begin
+   wire w1, w_din;
+        
+   always@(*) begin
         case(E)
             0: w1 = Q;
             1: w1 = w;
