@@ -11,11 +11,11 @@ module top_module(
     always @(*) begin    // This is a combinational always block
         // State transition logic
         case (state)
-            B: if(in==0) next_state <= A;
-               else      next_state <= B;
-            A: if(in==0) next_state <= B;
-               else      next_state <= A;
-            default:     next_state <= A;
+            B: if(in==0) next_state = A;
+               else      next_state = B;
+            A: if(in==0) next_state = B;
+               else      next_state = A;
+            default:     next_state = A;
         endcase
     end
 
