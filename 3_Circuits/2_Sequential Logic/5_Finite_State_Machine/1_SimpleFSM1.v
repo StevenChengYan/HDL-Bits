@@ -15,7 +15,7 @@ module top_module(
                else      next_state <= B;
             A: if(in==0) next_state <= B;
                else      next_state <= A;
-            default:     next_state <= B;
+            default:     next_state <= A;
         endcase
     end
 
